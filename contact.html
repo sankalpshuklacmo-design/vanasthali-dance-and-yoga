@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Vanasthali Dance Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Mon–Sat 7:00am – 8:00pm · Sunday yoga</span>
+      <a data-wa="Namaste, I would like to book a trial class at Vanasthali." href="#">WhatsApp the studio</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">Vanasthali<small>Dance Academy</small></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="dances.html">Dance</a>
+        <a href="yoga.html">Yoga</a>
+        <a href="about.html">Academy</a>
+        <a class="nav-cta active" href="contact.html">Book a trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero" style="--hero-img:url('images/ghoomar.jpg')">
+    <div class="container">
+      <p class="kicker">Enrol</p>
+      <h1>Begin with a trial.</h1>
+      <p>Write your name and interest. The form opens WhatsApp with your note already typed.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid two">
+        <form id="enquiry-form">
+          <label>Poora naam<input name="name" required placeholder="Aapka naam" /></label>
+          <label>Phone / WhatsApp<input name="phone" required placeholder="+91" /></label>
+          <label>Email<input type="email" name="email" placeholder="optional" /></label>
+          <label>Interest
+            <select name="interest">
+              <option>Classical dance</option>
+              <option>Folk dance</option>
+              <option>Bollywood / contemporary</option>
+              <option>Yoga</option>
+              <option>Kids batch</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" placeholder="Umar, preferred din, beginner ya experienced..."></textarea></label>
+          <button class="btn dark" type="submit">Enquiry bhejein</button>
+          <p id="form-notice" class="notice">WhatsApp khulega pre-filled message ke saath. Apna number script.js mein daal dena.</p>
+        </form>
+        <aside class="card">
+          <div class="card-media"><img src="images/dance-stage.jpg" alt="Studio"></div>
+          <div class="body">
+            <span class="tag">Studio</span>
+            <h3>Vanasthali Dance Academy</h3>
+            <p>Studio Lane, near Community Hall<br>Your City — 000000</p>
+            <p style="margin-top:12px"><strong>Phone / WhatsApp:</strong> <a data-phone href="tel:+919000000000">+91 90000 00000</a><br><strong>Email:</strong> <a href="mailto:hello@vanasthali.academy">hello@vanasthali.academy</a></p>
+            <p style="margin-top:12px">Mon–Sat 7:00am – 8:00pm<br>Sunday morning yoga</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>Vanasthali Dance Academy</h4><p>Dance aur yoga, care ke saath.</p></div>
+        <div><h4>Explore</h4><a href="dances.html">Dance</a><a href="yoga.html">Yoga</a></div>
+        <div><h4>Hours</h4><p>Mon–Sat 7am–8pm</p></div>
+        <div><h4>Social</h4><p>Instagram / YouTube links yahan.</p></div>
+      </div>
+      <p class="copyright">© 2026 Vanasthali Dance Academy</p>
+    </div>
+  </footer>
+  <a class="wa-float" data-wa="Namaste, Vanasthali trial class ke baare mein poochna tha." href="#">WhatsApp</a>
+  <script src="script.js"></script>
+</body>
+</html>
