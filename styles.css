@@ -208,3 +208,22 @@ h2:after {
   .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 160px 160px 180px; }
   .mosaic a:first-child { grid-row: auto; grid-column: 1 / -1; min-height: 220px; }
 }
+
+.hero-split { position: relative; min-height: 92vh; display: grid; grid-template-columns: 1.15fr 0.85fr; }
+.hero-pane {
+  background-size: cover; background-position: center 20%;
+  min-height: 50vh;
+}
+.hero-split .hero-copy {
+  position: absolute; inset: 0; z-index: 2;
+  display: grid; align-items: end;
+  background: linear-gradient(90deg, rgba(8,16,12,.72) 0%, rgba(8,16,12,.35) 55%, rgba(8,16,12,.45) 100%);
+  padding: 0 0 80px;
+  color: var(--ivory);
+}
+.hero-split .hero-copy h1 { max-width: 16ch; }
+@media (max-width: 760px) {
+  .hero-split { grid-template-columns: 1fr; min-height: auto; }
+  .hero-pane { min-height: 38vh; }
+  .hero-split .hero-copy { position: relative; padding: 48px 0 40px; background: var(--forest); }
+}
